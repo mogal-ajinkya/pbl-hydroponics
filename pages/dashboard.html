@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/jpg/ico" href="../assets/favicon.ico" />
+
+	<link rel="stylesheet" href="dashboard.css">
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<title>Hydroponics - Dashboard</title>
+</head>
+
+<body>
+	<header>
+		<h1>Hydroponics Sensor Dashboard</h1>
+	</header>
+	<h2>ESP Weather Station</h2>
+	<div class="main">
+		<section id="sensors">
+
+			<!-- temp  -->
+			<div class="sensor">
+				<div class="container">
+					<div class="temp-bar-container">
+						<div class="temp-circular-progress">
+							<div class="temp-value-container">0%</div>
+						</div>
+					</div>
+
+					<div class="details">
+						<h3>Temperature</h3>
+						<p>Current value: 25°C</p>
+					</div>
+				</div>
+
+				<div class="graph">
+					<div id="chart-temperature" ></div>
+					<h3>Temperature Graph</h3>
+				</div>
+			</div>
+
+
+			<!-- humidity  -->
+			<div class="sensor">
+				<div class="container">
+					<div class="humidity-bar-container">
+						<div class="humidity-circular-progress">
+							<div class="humidity-value-container">0%</div>
+						</div>
+					</div>
+					<div class="details">
+						<h3>Humidity</h3>
+						<p>Current value: 70%</p>
+					</div>
+				</div>
+
+				<!-- humidity  -->
+				<div class="graph">
+					<h3>Humidity Graph</h3>
+					<div id="chart-humidity"></div>
+				</div>
+			</div>
+
+			<!-- ph  -->
+			<div class="sensor">
+				<div class="container">
+					<div class="ph-bar-container">
+						<div class="ph-circular-progress">
+							<div class="ph-value-container">0%</div>
+						</div>
+					</div>
+					<div class="details">
+						<h3>pH</h3>
+						<p>Current value: 6.0</p>
+					</div>
+				</div>
+				<!-- ph  -->
+				<div class="graph">
+					<h3>pH Graph</h3>
+					<div id="chart-pressure"></div>
+				</div>
+			</div>
+		</section>
+
+		<!-- graph
+		<section id="graphs">
+			<h2>Graphs</h2>
+
+			temp 
+			<div class="graph">
+				<div id="chart-temperature" class="container"></div>
+				<h3>Temperature Graph</h3>
+			</div>
+
+			humidity 
+			<div class="graph">
+				<h3>Humidity Graph</h3>
+				<div id="chart-humidity" class="container"></div>
+			</div>
+
+
+			ph 
+			<div class="graph">
+				<h3>pH Graph</h3>
+				<div id="chart-pressure" class="container"></div>
+			</div>
+		</section> -->
+	</div>
+	<footer>
+		<p>&copy; 2023 Hydroponics Sensor Dashboard</p>
+	</footer>
+	<script src="dashboard.js"></script>
+</body>
+
+</html>
